@@ -1,15 +1,8 @@
-var helicopterIMG, helicopterSprite, packageSprite,packageIMG;
-var packageBody,ground
 const Engine = Matter.Engine;
 const World = Matter.World;
 const Bodies = Matter.Bodies;
 const Body = Matter.Body;
 const Constraint = Matter.Constraint;
-
-function preload()
-{
-	
-}
 
 function setup() {
 	createCanvas(800, 700);
@@ -55,8 +48,8 @@ function draw() {
 }
 
 function keyPressed(){
-	if (keyCode === ENTER){
-		Matter.Body.applyForce (bob1.body, bob1.body.position,{x:-85,y:85})
+	if (keyCode === UP_ARROW){
+		Matter.Body.applyForce (bob1.body, bob1.body.position,{x:-0.05,y:0})
 	}
 }
 

@@ -1,8 +1,8 @@
 class bob {
     constructor(x, y, radius) {
          var options = {
-            //'restitution':0.2,
-         isStatic : true
+            'restitution':0.2,
+         isStatic : false
         }
         this.body = Bodies.circle(x, y, radius, options);
         this.radius = radius;
